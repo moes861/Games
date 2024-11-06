@@ -166,9 +166,9 @@ div[style*="padding: 10px"][style*="background: rgb(220,137,232)"] {
     }
 
 
-.sec-logo{position: relative; top: 10px;
+.sec-logo{position: relative; bottom: px;
 align-items: left;
-
+margin: 0px !important;
 
 }
 header{max-width: 800px;
@@ -219,8 +219,8 @@ align-items: center;
         }
 
 .logo{
-    width: 100px;
-height: 100px;
+    width: 90px;
+height: 90px;
 
     aspect-ratio: 1/1;
 display: flex;
@@ -292,10 +292,10 @@ background-color: #ffffff; /* Light background */
         .search-bar {
             display: block !important;
             text-align: center;
-            margin-bottom: 20px;
-            margin-top: 20px;
-margin-left: 40px;
-margin-right: 40px;
+            margin-bottom: 40px;
+            margin-top: 40px;
+margin-left: 30px;
+margin-right: 30px;
         }
         .search-bar input {
             padding: 10px;
@@ -351,25 +351,48 @@ margin-right: 40px;
             .game {
                 width: calc(30% - 40px);
             }
+
+            .search-bar {
+            display: block !important;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 10px;
+position: relative; bottom: 3px;
+
+
+            
+        }
         }
        
         }
-        @media (max-width: 600px) {
-            .game {
+    
+            @media (max-width: 500px) {
+                .game {
                 width: calc(47% - 40px);
             }
-            @media (max-width: 600px) {
-            header {
+          
+                header {
                 display: block;
             }
 
             .search-bar {
             display: block !important;
             text-align: center;
-            margin-bottom: 20px;
-            margin-top: 20px;
+            margin-bottom: 10px;
+            margin-top: 10px;
 
+   
+
+            
         }
+
+        .sec-logo{position: relative; bottom: 3px;
+align-items: left;
+margin: 0px !important;
+width: 180px !important;
+height: 60px !important
+}
+
         }
 
     </style>
