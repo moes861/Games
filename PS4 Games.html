@@ -4,11 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PS Games</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&amp;family=Pacifico&amp;family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&amp;family=Roboto+Mono:ital,wght@0,100..700;1,100..700&amp;display=swap" rel="stylesheet">
         
 <style>
+
+
+/* تنسيق الفئات الثلاثة لجعلها تظهر جنبًا إلى جنب */
+.catego {
+    display: inline-flex;
+    width: 155px; height:
+    background-color: red;  /* خلفية زرقاء أنيقة */ 
+    border-radius: 25px;  /* حواف دائرية ناعمة */
+    padding: 20px 40px;  /* حشو داخلي جيد */
+    text-align: center;
+    transition: all 0.3s ease-in-out;  /* تأثير سلس عند التمرير */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* ظل خفيف */
+}
+
+.category-link {
+    text-decoration: none;
+    color: #fff;  /* النص باللون الأبيض */
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.category-link i {
+    margin-right: 10px;  /* مسافة بين الأيقونة والنص */
+    font-size: 22px;  /* حجم الأيقونة أكبر قليلاً */
+}
+
+
+.catego:hover {
+    transform: scale(1.1);  /* تكبير الفئة عند التمرير */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);  /* إضافة ظل أكبر */
+    background-color: #f14040;  /* تغيير اللون إلى الأزرق الداكن */
+    animation: hover-animation 0.5s ease-in-out; /* إضافة تأثير الحركة */
+}
+
+
+
+/* تخصيص الأيقونات */
+.fa {
+    font-family: FontAwesome;  /* التأكد من استخدام FontAwesome */
+}
+
+/* إذا أردت تنظيم الفئات باستخدام flexbox */
+.container-categories {
+    display: flex;
+    justify-content: center; /* محاذاة العناصر في المنتصف */
+    gap: 15px;  /* مسافة بين الفئات */
+}
+
+.catego a {
+    color: inherit;  /* جعل الرابط يحمل نفس اللون الأساسي */
+}
+
+
         #search{
 margin-top: 30px;
 
@@ -363,8 +419,32 @@ margin-right: 40px;
                 width: calc(30% - 40px);
             }
         @media (max-width: 600px) {
+
+            .category-link {
+    text-decoration: none;
+    color: #fff;  /* النص باللون الأبيض */
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+            
+            .catego {
+           
+    display: inline-flex;
+    width: 100px; height:
+    background-color: red;  /* خلفية زرقاء أنيقة */ 
+    border-radius: 25px;  /* حواف دائرية ناعمة */
+    padding: 20px 40px;  /* حشو داخلي جيد */
+    text-align: center;
+    transition: all 0.3s ease-in-out;  /* تأثير سلس عند التمرير */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* ظل خفيف */
+}
+
+
             .game {
-                width: calc(30% - 40px);
+                width: calc(47% - 40px);
             }
 
             .search-bar {
@@ -381,7 +461,7 @@ position: relative; bottom: 3px;
        
         }
     
-            @media (max-width: 500px) {
+            @media (max-width: 400px) {
                 .game {
                 width: calc(47% - 40px);
             }
@@ -488,6 +568,18 @@ height: 60px !important
 
   </div>
     
+</div style="display: flex;">
+<div style=text-align:center;">
+    <h5 class="catego">
+    <a href="PC Games.html" class="category-link">     <i class="fa fa-desktop"></i> PC GAMES</a>
+</h5>
+<h5 class="catego">
+    <a href="PS4 Games.html" class="category-link">  <i class="fa fa-gamepad"></i> PS4 GAMES</a>
+</h5>
+<h5 class="catego">
+    <a href="Programs.html" class="category-link"><i class="fa fa-cogs"></i> PROGRAMS</a>
+</h5>
+</div>
     
     </header>
 
