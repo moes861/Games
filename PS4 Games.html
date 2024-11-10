@@ -90,76 +90,109 @@ margin-top: 30px;
 
 
         }
-   .menu-container {
-      position: relative; /* Relative positioning for dropdown */
-    }
+        .menu-container {
+            display: block;
+ 
+}
 
-    /* Hamburger icon styling */
-    .menu-button {
-      background-color: transparent; /* No background */
-      border: none; /* No border */
-      cursor: pointer; /* Pointer cursor */
-      outline: none; /* No outline */
-      padding: 10px; /* Padding around button */
-      position: fixed; /* Fixed in the top-right corner */
-      top: 10px;
-      right: 10px;
-      z-index: 1000;
-    }
+/* زر القائمة */
+.menu-button {
+    display: inline-block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  right   : 10px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
 
-    /* Three dashes */
-    .menu-button div {
-      width: 30px; /* Width of dashes */
-      height: 4px; /* Height of dashes */
-      background-color: #e60000; /* Red color */
-      margin: 6px 0; /* Space between dashes */
-      transition: 0.4s; /* Smooth transition */
-    }
+/* تأثير عند التمرير على الزر */
+.menu-button:hover {
+  transform: scale(1.1);
+}
 
-    /* Dropdown content */
-    .menu-content {
-      display: none; /* Hidden by default */
-      position: absolute; /* Absolute positioning */
-      right: 0; /* Align to the right */
-      background-color: white; /* Background color of dropdown */
-      min-width: 180px; /* Minimum width */
-      border-radius: 8px; /* Rounded corners */
-      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Shadow effect */
-      z-index: 1; /* Ensure it appears above other content */
-      margin-top: 10px; /* Space above dropdown */
-      opacity: 0; /* Start invisible */
-      transform: translateY(-10px); /* Start slightly above */
-      transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transitions */
-    }
+/* الخطوط الثلاثة داخل الزر */
+.menu-button div {
+    display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #e60000;
+  margin: 6px 0;
+  border-radius: 2px;
+  transition: 0.4s ease;
+}
 
-    /* Show dropdown content when active */
-    .menu-content.show {
-      display: block; /* Show the dropdown */
-      opacity: 1; /* Fully visible */
-      transform: translateY(0); /* Move into position */
-      position: fixed; /* Fixed in the top-right corner */
-      top: 10px;
-      right: 10px;
-      z-index: 1000;
-    
-    }
+/* حركة الخطوط عند النقر */
+.menu-button.active div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
 
-    /* Links inside the dropdown */
-    .menu-content a {
-      color: #e60000; /* Red text */
-      padding: 12px 16px; /* Padding around links */
-      text-decoration: none; /* Remove underline */
-      display: block; /* Block display */
-      transition: background-color 0.3s ease; /* Smooth background color change */
-      border-radius: 6px; /* Rounded corners */
-      font-size: 15px; /* Font size */
-    }
+.menu-button.active div:nth-child(2) {
+  opacity: 0;
+}
 
-    /* Hover effect for dropdown links */
-    .menu-content a:hover {
-      background-color: #f2f2f2; /* Light grey on hover */
-    }
+.menu-button.active div:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
 
+/* محتوى القائمة */
+.menu-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  margin-top: 10px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  padding: 10px;
+}
+
+/* إظهار القائمة مع حركة انزلاق سلسة */
+.menu-content.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeIn 0.4s ease;
+}
+
+/* الرسوم المتحركة لظهور القائمة */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* الروابط داخل القائمة */
+.menu-content a {
+  color: #e60000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 6px;
+  font-size: 15px;
+  background: linear-gradient(to right, #f2f2f2, #ffffff);
+}
+
+/* تأثير التمرير على الروابط */
+.menu-content a:hover {
+  background: linear-gradient(to right, #e60000, #f2f2f2);
+  color: white;
+}
 
 .aa{display: none; }
 .bb{display: none;}

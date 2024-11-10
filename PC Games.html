@@ -102,19 +102,21 @@ margin-top: 30px;
 
         }
         .menu-container {
-  position: relative;
+            display: block;
+ 
 }
 
 /* زر القائمة */
 .menu-button {
+    display: inline-block;
   background-color: transparent;
   border: none;
   cursor: pointer;
   outline: none;
   padding: 10px;
-  position: fixed;
+  position: absolute;
   top: 10px;
-  right: 10px;
+  right   : 10px;
   z-index: 1000;
   transition: transform 0.3s ease;
 }
@@ -126,6 +128,7 @@ margin-top: 30px;
 
 /* الخطوط الثلاثة داخل الزر */
 .menu-button div {
+    display: block;
   width: 30px;
   height: 4px;
   background-color: #e60000;
@@ -594,12 +597,14 @@ height: 60px !important
 
 
 
-<body> <div class="menu-content" id="dropdownMenu">
+<body>
+    <header>
+    <div class="menu-content" id="dropdownMenu">
       <a href="PC Games.html">PC Games</a>
       <a href="PS4 Games.html">PS Games</a>
       <a href="programs.html">Programs</a>
     </div>
-  </div><header>  
+  </div>  
     
     <div class="menu-container">
     <button class="menu-button" onclick="toggleMenu()">
@@ -715,7 +720,7 @@ height: 60px !important
 
 
         <div class="game" data-price="25000"  onclick="showPopup(event, this)">
-            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202305/3007/2fff756fa904befe46b838dd6f27fa49f6b53d9f3dbbb776.png" alt="Devil May Cry 5 SE">
+            <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/Dragon%27s_Dogma_2_cover_art.jpg" alt="Devil May Cry 5 SE">
             <h2>Dragon's Dogma II</h2>
             <p class="aa" dir="rtl" lang="ar" >التصنيف:تقمص أدوار / أكشن</p>
 <p class="bb" dir="rtl" lang="ar">الوصف:تقدم Dragon's Dogma II تجربة عالم مفتوح مليئة بالوحوش العملاقة والمواجهات الشرسة في عالم خيالي. يتحكم اللاعب بشخصية مختارة ذات مهارات وقدرات قابلة للتطوير، مع حلفاء يتحكم بهم الذكاء الاصطناعي</p>
@@ -5508,6 +5513,7 @@ function sortGames() {
 // Call the sort function when the page loads
 document.addEventListener("DOMContentLoaded", sortGames);
    
+
 
     </script>
 
