@@ -10,6 +10,73 @@
     <style>
 
 
+.categories-select {
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.categories-select select {
+    padding: 12px 30px 12px 20px; /* Increased padding for a rounded effect */
+    font-size: 16px;
+    color: #333;
+    background-color: #ffffff;  /* Light red background */
+    border: 4px solid #d9534f;  /* Thick red border */
+    border-radius: 50px;  /* High border-radius for pill shape */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    width: 250px;  /* Increased width for a more balanced look */
+    transition: border-color 0.3s, background-color 0.3s;
+    padding-left: 30px;  /* Space for icons */
+}
+
+.categories-select select:focus {
+    border-color: #c9302c;  /* Darker red on focus */
+    background-color: #f9c6c6;  /* Light red background on focus */
+    outline: none;
+}
+
+.categories-select::before {
+    content: '▼';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #d9534f;  /* Red arrow */
+    pointer-events: none;
+}
+
+.categories-select select:hover {
+    border-color: #c9302c;  /* Darker red on hover */
+    background-color: #f9c6c6;  /* Light red background on hover */
+}
+
+.categories-select select option {
+    padding: 12px 10px;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #333;
+    padding-left: 30px;  /* Space for icons */
+}
+
+.categories-select select option:hover {
+    background-color: #f8d7da;  /* Light red background on option hover */
+}
+
+/* Adding some padding for icons */
+.categories-select select option i {
+    margin-right: 10px;
+    color: #d9534f;  /* Red icons */
+}
+
+.categories-select select option:hover i {
+    color: #c9302c;  /* Darker red on icon hover */
+}
+
+
 .discount-rate {
     position: absolute;
     top: 10px;
@@ -637,13 +704,46 @@ height: 60px !important
 <h5 class="catego">
     <a href="Programs.html" class="category-link"><i class="fa fa-cogs"></i> PROGRAMS</a>
 </h5>
-</div>
+
+    </div>
     
 </header>
-  
+</div>
 
-    
+<div style="max-width: 100%;"> 
+<div class="categories-select">
+<select onchange="filterByText(this.value)">
+   <option value="all">All/الكل</option>
+   <option value="أكشن">Action/اكشن</option>
+   <option value="مغامرات">Adventure/مغامرة</option>
+   <option value="تصويب">FPS/تصويب</option>
+   <option value="قتال">Fighting/قتال</option>
+
+   <option value="رياضة">Sports/رياضة</option>
+   <option value="سباق">Racing/سباق</option>
+   <option value="رعب">Horror/رعب</option>
+   <option value="زومبي">Zombie/زومبي</option>
+</select>
+</div>
+
+    <div>
+
+
+
+
+
+
+
+
+
+
+
     <h3 class="categ">New PC Games</h3>
+
+
+  
+    
+    </div>
     <div class="games-container">
 
 
@@ -2268,7 +2368,7 @@ height: 60px !important
             
             </div>
         <div class="game" data-price="25000"  onclick="showPopup(event, this)">
-            <img src="https://image.api.playstation.com/vulcan/img/rnd/202104/2808/zgKoXGOAFzxUSaP6F7lCGLSM.jpg" alt="DARKSIDERS WARMASTERED EDITION">
+            <img src="https://3.bp.blogspot.com/-n4M6JOVD0zw/WEkpW5ou8oI/AAAAAAAAL2o/jkB6Rq_foF4jQBHTbHh6FFgmzM3zt4XCwCLcB/s1600/8.jpg" alt="DARKSIDERS WARMASTERED EDITION">
             <h2>DARKSIDERS WARMASTERED EDITION</h2>
             <p class="aa" dir="rtl" lang="ar" >التصنيف:أكشن / مغامرة</p>
 <p class="bb" dir="rtl" lang="ar">الوصف:تعيد اللعبة تقديم تجربة Darksiders الأصلية برسومات محسنة، حيث يقود اللاعب شخصية War في رحلة ملحمية عبر عالم مروع</p>
@@ -3005,7 +3105,7 @@ height: 60px !important
             
             </div>
         <div class="game" data-price="25000"  onclick="showPopup(event, this)">
-            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202008/2818/4xjRkRmOm9wklCdSWXVMaXBi.png" alt="Ghostrunner 2">
+            <img src="https://1.bp.blogspot.com/-D92Aw7L9VMc/X4CpcmQQODI/AAAAAAAAV1A/Xm1x4l7xxd0ukpeYrfzubDoumlbOALHtQCLcBGAsYHQ/s313/8.jpg">
             <h2>Ghostrunner 1</h2>
             <p class="aa" dir="rtl" lang="ar" >التصنيف:أكشن / منصة</p>
 <p class="bb" dir="rtl" lang="ar">الوصف:تركز اللعبة على السرعة والمهارة في منصة ثلاثية الأبعاد حيث يتعين على اللاعب قتال الأعداء باستخدام تقنيات النينجا المتقدمة والتفاعل مع البيئة</p>
@@ -3341,7 +3441,7 @@ height: 60px !important
             
             </div>
         <div class="game" data-price="32000"  onclick="showPopup(event, this)">
-            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202010/0221/vC7trMorHJgbImp8PCQvpI0p.png" alt="Horizon Zero Dawn">
+            <img src="https://4.bp.blogspot.com/-a8jxZ_yTSiw/Xy7IJxQf4AI/AAAAAAAAS7Q/XMux8gOUBqYiJbskGc_tBqERJJQuXL-hACLcBGAsYHQ/s320/2.jpg" alt="Horizon Zero Dawn">
             <h2>Horizon Zero Dawn</h2>
             <p class="aa" dir="rtl" lang="ar" >التصنيف:أكشن / مغامرة</p>
 <p class="bb" dir="rtl" lang="ar">الوصف:قدم اللعبة تجربة فريدة في عالم مفتوح حيث يتعين على اللاعب مواجهة مخلوقات آلية واستكشاف قصة غامضة.</p>
@@ -3786,7 +3886,7 @@ height: 60px !important
             
             </div>
         <div class="game" data-price="25000"  onclick="showPopup(event, this)">
-            <img src="https://image.api.playstation.com/cdn/UP1018/CUSA03589_00/ezdXAsaNqjRSG19ujCjT1p1KqoI67wDO.png" alt="Mortal Kombat XL">
+            <img src="https://4.bp.blogspot.com/-a5kDfcujwPI/V_YSR9QEO0I/AAAAAAAAXG8/9lamup1WOhAp5vfTUTg65hZ2arYjLkHRQCLcB/s1600/mortal-kombat-xl-pc-cover-www.ovagames.com.jpg">
             <h2>Mortal Kombat XL</h2>
             <p class="aa" dir="rtl" lang="ar" >التصنيف:قتال</p>
 <p class="bb" dir="rtl" lang="ar">الوصف:جزء جديد من سلسلة القتال الشهيرة، تحتوي اللعبة على شخصيات جديدة ومعارك مثيرة.</p>
@@ -3870,7 +3970,7 @@ height: 60px !important
             
             </div>
         <div class="game" data-price="25000"  onclick="showPopup(event, this)">
-            <img src="https://image.api.playstation.com/cdn/EP0700/CUSA08767_00/ACVv6aRKiKu6wjZA6op1JxUyxaPU5UmR.png" alt="NARUTO TO BORUTO SHINOBI STRIKER Deluxe Edition">
+            <img src="https://4.bp.blogspot.com/-KQOR0bttNFo/W6BvM_ygWPI/AAAAAAAARs0/CZzqYxQIf9Qpcmz8Og4kOHXYgx99zrdygCLcBGAs/s1600/9.jpg">
             <h2>NARUTO TO BORUTO SHINOBI STRIKER Deluxe Edition</h2>
             <p class="aa" dir="rtl" lang="ar" >التصنيف:قتال / أكشن</p>
 <p class="bb" dir="rtl" lang="ar">الوصف:تقدم اللعبة تجارب قتال جماعية عبر الإنترنت، حيث يمكن للاعبين تشكيل فرق مع أصدقائهم والتنافس ضد فرق أخرى.</p>
@@ -4374,7 +4474,7 @@ height: 60px !important
             </div>
        
         <div class="game" data-price="25000"  onclick="showPopup(event, this)">
-            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202206/0206/WmriZBRlSeXWEEDLJOWW7MdW.png" alt="Resident Evil 3 Remake">
+            <img src="https://1.bp.blogspot.com/-9IGo-8HMkWc/X3Y22r7o16I/AAAAAAAAVV0/x0V7r9Whkx0O8rJB7BwjCKcjqz-N_zebgCLcBGAsYHQ/s320/1.jpg">
             <h2>Resident Evil 3 Remake</h2>
             <p class="aa" dir="rtl" lang="ar" >التصنيف:رعب / مغامرة</p>
 <p class="bb" dir="rtl" lang="ar">الوصف:تحديث للعبة الكلاسيكية مع أسلوب لعب حديث وقصة مشوقة، حيث تواجه اللاعبون Nemesis.</p>
@@ -4669,7 +4769,7 @@ height: 60px !important
             
             </div>
         <div class="game" data-price="25000"  onclick="showPopup(event, this)">
-            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202302/1600/9c60b8ce1ad7d118829b092c4b3027f8d1e639a4f9ead64d.jpg" alt="Shadow Warrior 3">
+            <img src="https://1.bp.blogspot.com/-_YdyyM5VuxM/Y9fFdbUeTeI/AAAAAAAAN9E/6Xbj0JqB7ZQVESMYFVW9eAsqmfi1SLagACNcBGAsYHQ/s0/4.jpg">
             <h2>Shadow Warrior 3</h2>
             <p class="aa" dir="rtl" lang="ar" >التصنيف:أكشن / إطلاق نار</p>
 <p class="bb" dir="rtl" lang="ar">الوصف:تدمج اللعبة بين قتال السيف وإطلاق النار، مع أسلوب لعب سريع ومليء بالحركة.</p>
@@ -4880,7 +4980,7 @@ height: 60px !important
             
             </div>
         <div class="game" data-price="25000"  onclick="showPopup(event, this)">
-            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202208/0309/pKf5KMjYbgs2EdnilRTHYHmW.png" alt="The Dark Pictures Anthology The Devil In Me">
+            <img src="https://1.bp.blogspot.com/-2gqSlkOOSg8/Y3eW54ku3zI/AAAAAAAADVY/SLDZ-kG6Nx0ZgERmDzN8w57VMynP0ZwhgCNcBGAsYHQ/s0/3.jpg">
             <h2>The Dark Pictures Anthology The Devil In Me</h2>
             <p class="aa" dir="rtl" lang="ar" >التصنيف:رعب / مغامرة تفاعلية</p>
 <p class="bb" dir="rtl" lang="ar">الوصف:الجزء الرابع من سلسلة Dark Pictures، يجمع بين الاختيارات الصعبة والقصص المتشابكة في بيئة رعب مشوقة.</p>
@@ -5513,6 +5613,24 @@ function sortGames() {
 // Call the sort function when the page loads
 document.addEventListener("DOMContentLoaded", sortGames);
    
+function filterByText(category) {
+            const games = document.querySelectorAll('.game');
+            games.forEach(game => {
+                const categoryText = game.querySelector('.aa').innerText;
+                
+                // عرض جميع الألعاب إذا كانت الفئة "all"
+                if (category === 'all') {
+                    game.style.display = 'block';
+                }
+                // عرض الألعاب التي تحتوي على النص المطلوب في .aa
+                else if (categoryText.includes(category)) {
+                    game.style.display = 'block';
+                } else {
+                    game.style.display = 'none';
+                }
+            });
+        }
+
 
 
     </script>

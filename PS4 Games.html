@@ -8,8 +8,76 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&amp;family=Pacifico&amp;family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&amp;family=Roboto+Mono:ital,wght@0,100..700;1,100..700&amp;display=swap" rel="stylesheet">
-        <script></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 <style>
+
+
+.categories-select {
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.categories-select select {
+    padding: 12px 30px 12px 20px; /* Increased padding for a rounded effect */
+    font-size: 16px;
+    color: #333;
+    background-color: #ffffff;  /* Light red background */
+    border: 4px solid #d9534f;  /* Thick red border */
+    border-radius: 50px;  /* High border-radius for pill shape */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    width: 250px;  /* Increased width for a more balanced look */
+    transition: border-color 0.3s, background-color 0.3s;
+    padding-left: 30px;  /* Space for icons */
+}
+
+.categories-select select:focus {
+    border-color: #c9302c;  /* Darker red on focus */
+    background-color: #f9c6c6;  /* Light red background on focus */
+    outline: none;
+}
+
+.categories-select::before {
+    content: '▼';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #d9534f;  /* Red arrow */
+    pointer-events: none;
+}
+
+.categories-select select:hover {
+    border-color: #c9302c;  /* Darker red on hover */
+    background-color: #f9c6c6;  /* Light red background on hover */
+}
+
+.categories-select select option {
+    padding: 12px 10px;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #333;
+    padding-left: 30px;  /* Space for icons */
+}
+
+.categories-select select option:hover {
+    background-color: #f8d7da;  /* Light red background on option hover */
+}
+
+/* Adding some padding for icons */
+.categories-select select option i {
+    margin-right: 10px;
+    color: #d9534f;  /* Red icons */
+}
+
+.categories-select select option:hover i {
+    color: #c9302c;  /* Darker red on icon hover */
+}
 
 
 .price-before {
@@ -634,11 +702,56 @@ height: 60px !important
 </h5>
 </div>
     
+
+
     </header>
 
-    <h3 class="categ">PS4 GAMES</h3>
+    <div style="max-width: 100%;"> 
+<div class="categories-select">
+<select onchange="filterByText(this.value)">
+   <option value="all">All/الكل</option>
+   <option value="أكشن">Action/اكشن</option>
+   <option value="مغامرات">Adventure/مغامرة</option>
+   <option value="تصويب">FPS/تصويب</option>
+   <option value="قتال">Fighting/قتال</option>
+
+   <option value="رياضة">Sports/رياضة</option>
+   <option value="سباق">Racing/سباق</option>
+   <option value="رعب">Horror/رعب</option>
+   <option value="زومبي">Zombie/زومبي</option>
+
+</select>
+</div>
+
+  <div> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <h3 class="categ">PS4 GAMES</h3> 
+    
+    
+
+    
+    
+    
+    
+    
+    
+    </div>
     <div class="games-container" id="gamescontainer">
     
+
     
 
                
@@ -646,7 +759,7 @@ height: 60px !important
         <div class="game" data-price="10000" onclick="showPopup(event, this)"> 
             <img src="https://3.bp.blogspot.com/-LyO6HRchD2w/XxZnpisURCI/AAAAAAAAEYo/dIhXD0pPDgc0KYLPG6WRD9pcdHn2mAlUACLcBGAsYHQ/s1600/4.jpg">
              <h2>Ace Combat 7: Skies Unknown</h2> 
-<p class="aa" dir="rtl" lang="ar">التصنيف: طيران حربي</p>
+<p class="aa" dir="rtl" lang="ar">التصنيف: أكشن / Action</p>
 <p class="bb" dir="rtl" lang="ar">الوصف: لعبة طيران حربي تقدم تجربة قتالية مدهشة مع طائرات حقيقية ومهمات مثيرة.</p>
 <p class="cc"></p>
 <p class="dd"></p>
@@ -660,7 +773,7 @@ height: 60px !important
 <div class="game" data-price="10000" onclick="showPopup(event, this)">
     <img src="https://1.bp.blogspot.com/-xlKJR_pkk_I/ZkRDDnUwQ5I/AAAAAAAAAB4/eFFPrCVLRRMpwYRCweSyFKBzH-MhBVjxACNcBGAsYHQ/s0/35.jpg">
  <h2>Arise: A Simple Story</h2> 
-<p class="aa" dir="rtl" lang="ar">التصنيف: مغامرات</p>
+<p class="aa" dir="rtl" lang="ar">التصنيف: مغامرات Adventure</p>
 <p class="bb" dir="rtl" lang="ar">الوصف: تجربة تفاعلية تركز على سرد القصص والتفاعل مع العالم المحيط.</p>
 <p class="cc"></p>
 <p class="dd"></p>
@@ -730,7 +843,7 @@ height: 60px !important
 <div class="game" data-price="10000" onclick="showPopup(event, this)">
     <img src="https://1.bp.blogspot.com/-BWOXkMykc5o/XxMJDJcx2xI/AAAAAAAAEMQ/AaZRG4g7NFIoA8hE0JX7iLnThRgGCXPcgCLcBGAsYHQ/s1600/13.jpg">
  <h2>Battlefield V</h2> 
-<p class="aa" dir="rtl" lang="ar">التصنيف: أكشن / حربية</p>
+<p class="aa" dir="rtl" lang="ar">التصنيف: تصويب أكشن / حربية</p>
 <p class="bb" dir="rtl" lang="ar">الوصف: تجربة حربية غامرة خلال الحرب العالمية الثانية مع معارك ضخمة.</p>
 <p class="cc"></p>
 <p class="dd"></p>
@@ -786,7 +899,7 @@ height: 60px !important
     <div class="game" data-price="20000" onclick="showPopup(event, this)">
     <img src="https://1.bp.blogspot.com/-uEYYYsj0HFo/Xx5t0OHxHdI/AAAAAAAAACg/a4F5sLmoNuEdfHZn0R4d18qnjIzFibpbACLcBGAsYHQ/s1600/2.jpg">
  <h2>Borderlands 3</h2> 
-<p class="aa" dir="rtl" lang="ar">التصنيف: VR / مغامرات</p>
+<p class="aa" dir="rtl" lang="ar">adventure</p>
 <p class="bb" dir="rtl" lang="ar">الوصف: تتميز اللعبة بأسلوب اللعب السريع الذي يجمع بين القتال المتواصل والمهام المختلفة. يمكن للاعبين اختيار أحد الشخصيات الأربعة، لكل منها مهارات فريدة، مثل القتال عن قرب أو استخدام الأسلحة المتقدمة. تحتوي اللعبة على مجموعة واسعة من الأسلحة والمعدات، مما يتيح تخصيص تجربة اللعب. تضم اللعبة أيضًا عوالم متنوعة ومليئة بالتفاصيل، وتقدم تجربة لعب فردية أو تعاونية عبر الإنترنت..</p>
 <p class="cc"></p>
 <p class="dd"></p>
@@ -814,7 +927,7 @@ height: 60px !important
 <div class="game" data-price="10000" onclick="showPopup(event, this)">
     <img src="https://3.bp.blogspot.com/-hGEydETzxcM/WorbkboML4I/AAAAAAAALPU/9LUCGLsQOeICsbNBRAFX6-Egm1Zl-GJugCLcBGAs/s1600/10.jpg">
  <h2>Call of Duty: Black Ops III</h2> 
-<p class="aa" dir="rtl" lang="ar">التصنيف: أكشن / حربية</p>
+<p class="aa" dir="rtl" lang="ar">التصنيف: تصويب أكشن / حربية</p>
 <p class="bb" dir="rtl" lang="ar">الوصف: تجربة مثيرة من سلسلة كول أوف ديوتي مع وضع اللعب الجماعي المحسن.</p>
 <p class="cc"></p>
 <p class="dd"></p>
@@ -1607,7 +1720,7 @@ height: 60px !important
 <div class="game" data-price="10000" onclick="showPopup(event, this)">
     <img src="https://2.bp.blogspot.com/-ArSxWymNDZI/XxL8Rq-4OXI/AAAAAAAAEJM/CzY09SeVzHMvJ_dTXG6SVyopdtm-8omLQCLcBGAsYHQ/s1600/6.jpg">
  <h2>Resident Evil 2</h2> 
-<p class="aa" dir="rtl" lang="ar">التصنيف: رعب / بقاء</p>
+<p class="aa" dir="rtl" lang="ar">التصنيف: زومبي رعب / بقاء</p>
 <p class="bb" dir="rtl" lang="ar">الوصف: إعادة تصور اللعبة الكلاسيكية مع رسومات محسنة وتجربة رعب مثيرة.</p>
 <p class="cc"></p>
 <p class="dd"></p>
@@ -1621,7 +1734,7 @@ height: 60px !important
 <div class="game" data-price="10000" onclick="showPopup(event, this)">
     <img src="https://dlpsgame.com/wp-content/uploads/2024/10/1-13.jpg">
  <h2>Resident Evil Village</h2> 
-<p class="aa" dir="rtl" lang="ar">التصنيف: رعب / بقاء</p>
+<p class="aa" dir="rtl" lang="ar">التصنيف: زومبي رعب / بقاء</p>
 <p class="bb" dir="rtl" lang="ar">الوصف: تجربة رعب جديدة في عالم مفعم بالتوتر والتحديات.</p>
 <p class="cc"></p>
 <p class="dd"></p>
@@ -1816,7 +1929,7 @@ height: 60px !important
         <img src="https://1.bp.blogspot.com/-mLQwHsy9ckM/X9zOMcdcSsI/AAAAAAAAID0/aXBV3PWFFjsex6TuzuzbKRFfwuvwfmiXgCLcBGAsYHQ/s0/2.jpg">
    
          <h2>Resident Evil 3</h2>
-     <p class="aa" dir="rtl" lang="ar">التصنيف: رعب / بقاء</p>
+     <p class="aa" dir="rtl" lang="ar">التصنيف: زومبي رعب / بقاء</p>
         <p class="bb" dir="rtl" lang="ar">الوصف: إعادة تصور للعبة الرعب الكلاسيكية في عالم مليء بالزومبي.</p>
         <p class="cc"></P>
        <P class="dd"></p>
@@ -1831,7 +1944,7 @@ height: 60px !important
         <img src="https://1.bp.blogspot.com/-mO89dvXdmhg/ZB0njRKLJkI/AAAAAAAAAxs/WN6TF8M7rck7YCrKnvi8hoC9blu3Jea_QCNcBGAsYHQ/s0/4.jpg">
    
          <h2>Resident Evil 4 Remake</h2>
-     <p class="aa" dir="rtl" lang="ar">التصنيف: رعب / بقاء</p>
+     <p class="aa" dir="rtl" lang="ar">التصنيف: زومبي رعب / بقاء</p>
         <p class="bb" dir="rtl" lang="ar">الوصف: إعادة تقديم لأحد أفضل ألعاب الرعب التي تركز على القتال والبقاء.</p>
         <p class="cc"></P>
        <P class="dd"></p>
@@ -1921,7 +2034,7 @@ height: 60px !important
         <img src="https://1.bp.blogspot.com/-dGXq0O8OHgs/Ysz62MHsgLI/AAAAAAAAmAc/iOB8oNcWkVIE0wYzuidCXWmfKk7XacUpgCNcBGAsYHQ/s0/2.jpg">
    
          <h2>Sniper Elite 5</h2>
-     <p class="aa" dir="rtl" lang="ar">التصنيف: أكشن / تكتيك</p>
+     <p class="aa" dir="rtl" lang="ar">التصنيف: تصويب أكشن / تكتيك</p>
         <p class="bb" dir="rtl" lang="ar">الوصف: لعبة تصويب تعتمد على تكتيكات القنص في الحرب العالمية الثانية.</p>
         <p class="cc"></P>
        <P class="dd"></p>
@@ -1936,7 +2049,7 @@ height: 60px !important
         <img src="https://1.bp.blogspot.com/-oTPz0jXyvSU/XymzdAZkpRI/AAAAAAAAApg/tAy-Ce8nMNwus7jKBsfzoXUc4b1PWTd6ACLcBGAsYHQ/s1600/2.jpg">
 
          <h2>Sniper Ghost Warrior Contracts 2</h2>
-        <p class="aa" dir="rtl" lang="ar">التصنيف: أكشن / تكتيك</p>
+        <p class="aa" dir="rtl" lang="ar">التصنيف: تصويب أكشن / تكتيك</p>
         <p class="bb" dir="rtl" lang="ar">الوصف: تجربة قنص دقيقة في بيئات معقدة مليئة بالتحديات.</p>
         <p class="cc"></P>
        <P class="dd"></p>
@@ -2291,7 +2404,7 @@ height: 60px !important
 <p class="ss">Size: 30 GB</p>
 </div>
  <div class="game" data-price="10000"  onclick="showPopup(event, this)">
-    <img src="data:image/jpeg;base64,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">
+<img src="https://m.media-amazon.com/images/I/81asexOEYTL._AC_UF1000,1000_QL80_.jpg">
  <h2>Adam's Venture: Origins</h2>
 <p class="aa" dir="rtl" lang="ar">التصنيف: مغامرات / ألغاز</p>
 <p class="bb" dir="rtl" lang="ar">الوصف: لعبة مغامرات تتبع قصة شخصية "آدم" في رحلة مليئة بالألغاز والتحديات.</p>
@@ -3278,7 +3391,7 @@ height: 60px !important
  <div class="game" data-price="10000"  onclick="showPopup(event, this)">
     <img src="https://4.bp.blogspot.com/-BEO6IJpHJpQ/WtIO7GSiQrI/AAAAAAAAF6E/nxFuT90sDNQzWb5c2WleM-S0FrtVh3BnQCLcBGAs/s1600/44.jpg">
  <h2>Resident Evil 4</h2>
-<p class="aa" dir="rtl" lang="ar">التصنيف: رعب / أكشن</p>
+<p class="aa" dir="rtl" lang="ar">التصنيف: زومبي رعب / أكشن</p>
 <p class="bb" dir="rtl" lang="ar">الوصف: لعبة رعب بقاء حيث يجب على اللاعب النجاة من المخلوقات المتحولة بينما يستكشف مناطق غامضة.</p>
 <p class="cc"></p>
 <p class="dd"></p>
@@ -3290,7 +3403,7 @@ height: 60px !important
  <div class="game" data-price="10000"  onclick="showPopup(event, this)">
     <img src="https://4.bp.blogspot.com/-RGILIXSZkEY/WoViqSUz9II/AAAAAAAAKz4/msSYBC4b9n0aHbWpwJ6qtwe9Z6yEDT1ogCLcBGAs/s1600/36.jpg">
  <h2>Resident Evil 6</h2>
-<p class="aa" dir="rtl" lang="ar">التصنيف: رعب / أكشن</p>
+<p class="aa" dir="rtl" lang="ar">التصنيف: زومبي رعب / أكشن</p>
 <p class="bb" dir="rtl" lang="ar">الوصف: لعبة رعب أكشن تحتوي على قصة متعددة الأبعاد مع العديد من الشخصيات التي تواجه كائنات مرعبة.</p>
 <p class="cc"></p>
 <p class="dd"></p>
@@ -3302,7 +3415,7 @@ height: 60px !important
  <div class="game" data-price="10000"  onclick="showPopup(event, this)">
     <img src="https://1.bp.blogspot.com/-ustafhtKnyg/Wxpma-d9DVI/AAAAAAAAMYg/XGX4vrH_QuM0aBQkpdybFWOMcH74ZEHKQCLcBGAs/s1600/1.jpg">
  <h2>Resident Evil 7</h2>
-<p class="aa" dir="rtl" lang="ar">التصنيف: رعب / بقاء</p>
+<p class="aa" dir="rtl" lang="ar">التصنيف: زومبي رعب / بقاء</p>
 <p class="bb" dir="rtl" lang="ar">الوصف: لعبة رعب من منظور الشخص الأول حيث يجب على اللاعب البقاء على قيد الحياة في مكان مظلم مليء بالمخاطر.</p>
 <p class="cc"></p>
 <p class="dd"></p>
@@ -3314,7 +3427,7 @@ height: 60px !important
  <div class="game" data-price="10000"  onclick="showPopup(event, this)">
     <img src="https://2.bp.blogspot.com/-AIuj5OJV9OM/WtQm1vs7BcI/AAAAAAAAF64/7gawq_Xg7AIMxZJH-3J4k27PKV7ips9dgCLcBGAs/s1600/45.jpg">
  <h2>Resident Evil Origins Collection</h2>
-<p class="aa" dir="rtl" lang="ar">التصنيف: رعب / أكشن</p>
+<p class="aa" dir="rtl" lang="ar">التصنيف: زومبي رعب / أكشن</p>
 <p class="bb" dir="rtl" lang="ar">الوصف: مجموعة تحتوي على جزئين من سلسلة Resident Evil مع رسومات محسنة وتجربة لعب تقليدية في عالم الرعب.</p>
 <p class="cc"></p>
 <p class="dd"></p>
@@ -3326,7 +3439,7 @@ height: 60px !important
  <div class="game" data-price="10000"  onclick="showPopup(event, this)">
     <img src="https://3.bp.blogspot.com/-J9BV6B7BRcc/WqCsRnvx-9I/AAAAAAAACM4/HBDVpBXiOEQ0Q0aiaAmz4wfouMOV0C0dgCLcBGAs/s1600/3.jpg">
  <h2>Resident Evil Revelations</h2>
-<p class="aa" dir="rtl" lang="ar">التصنيف: رعب / أكشن</p>
+<p class="aa" dir="rtl" lang="ar">التصنيف: زومبي رعب / أكشن</p>
 <p class="bb" dir="rtl" lang="ar">الوصف: لعبة أكشن ورعب تركز على القصة في أجواء غامضة مع أعداء متنوعين ومهام مليئة بالتوتر.</p>
 <p class="cc"></p>
 <p class="dd"></p>
@@ -3362,7 +3475,7 @@ height: 60px !important
  <div class="game" data-price="10000"  onclick="showPopup(event, this)">
     <img src="https://2.bp.blogspot.com/-kVgjvHoLreY/X00TwAd8c1I/AAAAAAAAGtE/-wuhhdIiB4Mt3uZClDjc4emH4DSz3A6OQCLcBGAsYHQ/s1600/1.jpg">
  <h2>Sniper Elite 4</h2>
-<p class="aa" dir="rtl" lang="ar">التصنيف: أكشن / قنص</p>
+<p class="aa" dir="rtl" lang="ar">التصنيف: تصويب أكشن / قنص</p>
 <p class="bb" dir="rtl" lang="ar">الوصف: لعبة قنص حيث يقود اللاعب شخصية القناص في مهمة سرية ضد الأعداء في بيئات قتالية متنوعة.</p>
 <p class="cc"></p>
 <p class="dd"></p>
@@ -3374,7 +3487,7 @@ height: 60px !important
  <div class="game" data-price="10000"  onclick="showPopup(event, this)">
     <img src="https://2.bp.blogspot.com/-33hHO30L9p8/WpjbFHSLk5I/AAAAAAAABRw/HsJK47tLMhIteoOherhz_nEjwxCZptDCACLcBGAs/s1600/33.jpg">
  <h2>Sniper Elite 3</h2>
-<p class="aa" dir="rtl" lang="ar">التصنيف: أكشن / قنص</p>
+<p class="aa" dir="rtl" lang="ar">التصنيف:  تصويب أكشن / قنص</p>
 <p class="bb" dir="rtl" lang="ar">الوصف: لعبة قنص تركز على التكتيك والقتال عن بعد، حيث يتنقل اللاعب عبر مستويات صعبة للقضاء على الأعداء من مسافات بعيدة.</p>
 <p class="cc"></p>
 <p class="dd"></p>
@@ -3386,7 +3499,7 @@ height: 60px !important
  <div class="game" data-price="10000"  onclick="showPopup(event, this)">
     <img src="https://1.bp.blogspot.com/-LMysFErCL88/WqaURYAWhfI/AAAAAAAACW0/Ovt5p7cYSWUZFWK1QnCSKH1xGADKCOIFwCLcBGAs/s1600/5.jpg">
  <h2>Sniper Ghost Warrior 3</h2>
-<p class="aa" dir="rtl" lang="ar">التصنيف: أكشن / قنص</p>
+<p class="aa" dir="rtl" lang="ar">التصنيف: تصويب أكشن / قنص</p>
 <p class="bb" dir="rtl" lang="ar">الوصف: لعبة قنص في عالم مفتوح حيث يتعين على اللاعب إتمام مهمات قتالية مع التركيز على دقة القنص والتكتيك.</p>
 <p class="cc"></p>
 <p class="dd"></p>
@@ -3567,7 +3680,7 @@ height: 60px !important
  <div class="game" data-price="10000"  onclick="showPopup(event, this)">
     <img src="https://4.bp.blogspot.com/-jGWvLy9peKU/XxQtwYfLB_I/AAAAAAAAEPE/HVMpxNnr_0Ys7Dvdv32ohhuzV7p3D-VVQCLcBGAsYHQ/s1600/4.jpg">
  <h2>World War Z</h2>
-<p class="aa" dir="rtl" lang="ar">التصنيف: أكشن / رعب</p>
+<p class="aa" dir="rtl" lang="ar">التصنيف: زومبي أكشن / رعب</p>
 <p class="bb" dir="rtl" lang="ar">الوصف: لعبة أكشن جماعية حيث يتعاون اللاعبون لمواجهة جحافل الزومبي في معارك ملحمية عبر عدة مواقع حول العالم.</p>
 <p class="cc"></p>
 <p class="dd"></p>
@@ -3826,6 +3939,26 @@ function sortGames() {
 // Call the sort function when the page loads
 document.addEventListener("DOMContentLoaded", sortGames);
    
+        function filterByText(category) {
+            const games = document.querySelectorAll('.game');
+            games.forEach(game => {
+                const categoryText = game.querySelector('.aa').innerText;
+                
+                // عرض جميع الألعاب إذا كانت الفئة "all"
+                if (category === 'all') {
+                    game.style.display = 'block';
+                }
+                // عرض الألعاب التي تحتوي على النص المطلوب في .aa
+                else if (categoryText.includes(category)) {
+                    game.style.display = 'block';
+                } else {
+                    game.style.display = 'none';
+                }
+            });
+        }
+
+
+
     </script>
 
     
