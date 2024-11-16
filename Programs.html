@@ -250,6 +250,7 @@ margin-top: 30px;
             transform: translate(-50%, -50%); /* Adjust for exact center */
         }
         .popup p {
+            text-align: right;
             margin: 0; /* Remove default margin */
             font-size: small; /* Font size */
         }
@@ -682,7 +683,7 @@ height: 60px !important
     <div class="menu-content" id="dropdownMenu">
       <a href="PC Games.html">PC Games</a>
       <a href="PS4 Games.html">PS Games</a>
-      <a href="games.html">PROGRAMS</a>
+      <a href="Programs.html">PROGRAMS</a>
     </div>
   </div><header>  
     
@@ -695,7 +696,7 @@ height: 60px !important
     <div class="menu-content" id="dropdownMenu">
         <a href="PC Games.html">PC Games</a>
       <a href="PS4 Games.html">PS Games</a>
-      <a href="games.html">PROGRAMS</a>
+      <a href="Programs.html">PROGRAMS</a>
     </div>
   </div>
 
@@ -706,7 +707,7 @@ height: 60px !important
         <input type="text" id="search" placeholder="Search for a game..." style="display: inline-block;">
        
 
-    </div style="display: fle;">
+    </div ">
 <div style=text-align:center;">
     <h5 class="catego">
     <a href="PC Games.html" class="category-link">     <i class="fa fa-desktop"></i> PC GAMES</a>
@@ -726,29 +727,101 @@ height: 60px !important
 <div class="categories-select">
     <select onchange="filterContainersByCategory(this.value)">
         <option value="all">All/الكل</option>
-        <option value="design">Design/تصميم</option>
+        <option value="ORIGINAL">ORIGINAL PROGRAMS/برامج أصلية</option>
+        <option value="DESIGN">Design/تصميم</option>
         <option value="ELECTRIC">ELECTRIC/كهرباء</option>
         <option value="EMBROIDERY">EMBROIDERY/تطريز</option>
         <option value="ENGENEERING">ENGENEERING/هندسة</option>
-        <option value="MAHTS">MATHS/رياضيات</option>
-        <option value="PROGRAMMING">PROGRAMMING/برمجة</option>
+        <option value="MATHS" >MATHS/رياضيات</option>
+        <option value="PROGRAMMING">PROGRAMMING/برمجة</option>  
         <option value="SYSTEMS">SYSTEMS/أنظمة</option>
+        <option value="SIEMENS">SIEMENS/سيمنز</option>
         <option value="VIDEO EDITING">VIDEO EDITING/تحرير فيديو</option>
 
         
     </select>
 </div>
-<h3 class="categ" data-category="design">DESIGN</h3>
-<div class="games-container" data-category="design">
+<div>
+<h3 class="categ" data-category="ORIGINAL">ORIGINAL PROGRAMS</h3>
+</div>
+<div class="games-container" data-category="ORIGINAL">
+    <div class="game" data-price="95000" onclick="showPopup(event, this)">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxLOQG5-u28MTJeP4xd3lzmfKD5R1Vt6609Q&s">
+    <h2>Windows 11 Pro OEM </h2>
+    <p class="aa" dir="rtl" lang="ar">التصنيف: نظام تشغيل</p>
+    <p class="bb" dir="rtl" lang="ar"></p>
+    <p class="cc" style="text-align: right;"></p>
+    <p class="dd"></p>
+    <p class="hard">1</p>
+    <p class="price-before"></p>
+    <p class="price-after"></p>
+    <p class="ss">Size: 5GB</p>
+</div>
 
+<div class="game" data-price="95000" onclick="showPopup(event, this)">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9BAkACNNqX7ZYzCD02XB53EzFxLhjxJF3Gg&s">
+    <h2>Windows 10 Professional OEM</h2>
+    <p class="aa" dir="rtl" lang="ar">التصنيف: نظام تشغيل</p>
+    <p class="bb" dir="rtl" lang="ar"></p>
+    <p class="cc" style="text-align: right;"></p>
+    <p class="dd"></p>
+    <p class="hard">1</p>
+    <p class="price-before"></p>
+    <p class="price-after"></p>
+    <p class="ss">Size: 5GB</p>
+</div>
 
+<div class="game" data-price="95000" onclick="showPopup(event, this)">
+    <img src="https://mamunacademy.com.bd/wp-content/uploads/2023/08/win-11-retail-1.png">
+    <h2>Windows 11 Pro Cd Key Retail</h2>
+    <p class="aa" dir="rtl" lang="ar">التصنيف: نظام تشغيل</p>
+    <p class="bb" dir="rtl" lang="ar"></p>
+    <p class="cc" style="text-align: right;"></p>
+    <p class="dd"></p>
+    <p class="hard">1</p>
+    <p class="price-before"></p>
+    <p class="price-after"></p>
+    <p class="ss">Size: 5GB</p>
+</div>
+
+<div class="game" data-price="95000" onclick="showPopup(event, this)">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFCS-WLZKbLHNKZnFr1FCkm7Gn0A383cPM4A&s" >
+    <h2>Office 2021 Professional Plus  Lifetime </h2>
+    <p class="aa" dir="rtl" lang="ar">التصنيف: تحرير نصوص</p>
+    <p class="bb" dir="rtl" lang="ar"></p>
+    <p class="cc" style="text-align: right;"></p>
+    <p class="dd"></p>
+    <p class="hard">1</p>
+    <p class="price-before"></p>
+    <p class="price-after"></p>
+    <p class="ss">Size: 5GB</p>
+</div>
+<div class="game" data-price="95000" onclick="showPopup(event, this)">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRObSkj_5vdtavARF-WFK4tVL0JJP4IqGTQhrQrSYes8b7Wu4vJRjSmo5kD2I4vOQhF4zQ&usqp=CAU" >
+    <h2> Open VPN </h2>
+    <p class="aa" dir="rtl" lang="ar">التصنيف: كاسر بروكسي </p>
+    <p class="bb" dir="rtl" lang="ar"></p>
+    <p class="cc" style="text-align: right;" >الوصف:تفعيل سنوي</p>
+    <p class="dd"></p>
+    <p class="hard">1</p>
+    <p class="price-before"></p>
+    <p class="price-after"></p>
+    <p class="ss">Size: 5GB</p>
+</div>
+
+</div>
+
+<div>
+<h3 class="categ" data-category="DESIGN">DESIGN</h3>
+</div>
+<div class="games-container" data-category="DESIGN">
 
     <div class="game" data-price="95000" onclick="showPopup(event, this)">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHJF7elhkxHT-SmbpBYQM23xehMc8ZmYVasw&s" alt="Adobe 2024">
     <h2>Adobe 2024</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -761,7 +834,7 @@ height: 60px !important
     <h2>Adobe Acrobat Pro DC 2021</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -774,7 +847,7 @@ height: 60px !important
     <h2>Adobe After Effect 2017</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -787,7 +860,7 @@ height: 60px !important
     <h2>Adobe After Effects 2021 v18.1.0.38</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -800,7 +873,7 @@ height: 60px !important
     <h2>Adobe Captivate 2019 v11.8.0.586</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -813,7 +886,7 @@ height: 60px !important
     <h2>Adobe Character Animator CC 2018</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -826,7 +899,7 @@ height: 60px !important
     <h2>Adobe Collection 2017</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -839,7 +912,7 @@ height: 60px !important
     <h2>Adobe Collection 2018</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -852,7 +925,7 @@ height: 60px !important
     <h2>Adobe Collection 2019</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -865,7 +938,7 @@ height: 60px !important
     <h2>Adobe Collection 2021</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -878,7 +951,7 @@ height: 60px !important
     <h2>Adobe Collection 2022</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -891,7 +964,7 @@ height: 60px !important
     <h2>Adobe Collection 2023</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -904,7 +977,7 @@ height: 60px !important
     <h2>Adobe Dimension CC 2018</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -917,7 +990,7 @@ height: 60px !important
     <h2>Adobe InDesign 2020</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -930,7 +1003,7 @@ height: 60px !important
     <h2>Adobe Master Collection 2020</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -943,7 +1016,7 @@ height: 60px !important
     <h2>Adobe Media Encoder 2021 v15.2.0.30</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -956,7 +1029,7 @@ height: 60px !important
     <h2>Adobe Muse 2018</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -969,7 +1042,7 @@ height: 60px !important
     <h2>Adobe Photoshop 2015 [32x & 64x]</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -982,7 +1055,7 @@ height: 60px !important
     <h2>Adobe Photoshop 2020</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -995,7 +1068,7 @@ height: 60px !important
     <h2>Adobe Photoshop 2022 v23.1.1.202 + Neural filters x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1008,7 +1081,7 @@ height: 60px !important
     <h2>Adobe Photoshop Collection</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1021,7 +1094,7 @@ height: 60px !important
     <h2>Adobe Premiere Elements 2019</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1034,7 +1107,7 @@ height: 60px !important
     <h2>Adobe Substance 3D Painter v10</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1047,7 +1120,7 @@ height: 60px !important
     <h2>Adobe XD 51.0.12</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1060,7 +1133,7 @@ height: 60px !important
     <h2>BarTender Enterprise 2019 R6.v11.1 x86</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1073,7 +1146,7 @@ height: 60px !important
     <h2>CapCut 3.6</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1086,7 +1159,7 @@ height: 60px !important
     <h2>Cartoon Animator 4.1 CrazyTalk</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1099,7 +1172,7 @@ height: 60px !important
     <h2>Corel Motion Studio 3D v1.0</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1112,7 +1185,7 @@ height: 60px !important
     <h2>Corel Painter 2021 21.0.0.211 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1125,7 +1198,7 @@ height: 60px !important
     <h2>Corel PaintShop Pro 2021 Ultimate 23.0.0.143</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1138,7 +1211,7 @@ height: 60px !important
     <h2>CorelDRAW 2023 MF07</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1151,7 +1224,7 @@ height: 60px !important
     <h2>CorelDRAW 2017</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1164,7 +1237,7 @@ height: 60px !important
     <h2>CorelDRAW 2019 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1178,7 +1251,7 @@ height: 60px !important
     <h2>CorelDRAW 2020 v22.1.1.523 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1191,7 +1264,7 @@ height: 60px !important
     <h2>CorelDRAW 2021 v23.0.0.363 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1204,7 +1277,7 @@ height: 60px !important
     <h2>CorelDRAW 2022 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1221,7 +1294,7 @@ height: 60px !important
     <h2>Gemvision Matrix 9.0 Build</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1234,7 +1307,7 @@ height: 60px !important
     <h2>Gemvision MatrixGold 2.0</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1247,7 +1320,7 @@ height: 60px !important
     <h2>Luminar 4.3.0.6886 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1260,7 +1333,7 @@ height: 60px !important
     <h2>Luminar AI 1.0.0.7410</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1273,7 +1346,7 @@ height: 60px !important
     <h2>Macromedia Authorware 7.01</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1286,7 +1359,7 @@ height: 60px !important
     <h2>Nik Collection 3.0.7</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1299,7 +1372,7 @@ height: 60px !important
     <h2>RhinoGold Rhino6 6.6.18059.2 </h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1313,7 +1386,7 @@ height: 60px !important
     <h2>Skylum Luminar Neo 1.3.1.10236</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1332,7 +1405,7 @@ height: 60px !important
     <h2>Autodesk AutoCAD Electrical 2022 (x64)</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة / تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1345,7 +1418,7 @@ height: 60px !important
     <h2>Automation Studio 6.0.0.1</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1358,7 +1431,7 @@ height: 60px !important
     <h2>CadSoft Eagle Professional 6.5.0</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1373,7 +1446,7 @@ height: 60px !important
     <h2>CSI ETABS Ultimate 20.3.0 Build 2929 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1386,7 +1459,7 @@ height: 60px !important
     <h2>CSI SAFE v20.3.0 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1399,7 +1472,7 @@ height: 60px !important
     <h2>Eagle 6.4</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1412,7 +1485,7 @@ height: 60px !important
     <h2>Eagle point 2009</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1426,7 +1499,7 @@ height: 60px !important
     <h2>Electronic Workbench 5.12</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1439,7 +1512,7 @@ height: 60px !important
     <h2>EPLAN Electric P8 2.7.3</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1452,7 +1525,7 @@ height: 60px !important
     <h2>EPLAN Electric P8 2022.17561</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: كهرباء / هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1465,7 +1538,7 @@ height: 60px !important
     <h2>Etap 16</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: كهرباء / هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1478,7 +1551,7 @@ height: 60px !important
     <h2>Global Mapper 20 x86</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: كهرباء / هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1491,7 +1564,7 @@ height: 60px !important
     <h2>LabView 2016 ( 32x & 64x )</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: كهرباء / هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1504,7 +1577,7 @@ height: 60px !important
     <h2>Multisim 10.1.1</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: كهرباء / تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1517,7 +1590,7 @@ height: 60px !important
     <h2>NI Circuit Design Suite 14</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: كهرباء / تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1530,7 +1603,7 @@ height: 60px !important
     <h2>NI Circuit Design Suite 14.2</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: كهرباء / تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1543,7 +1616,7 @@ height: 60px !important
     <h2>Proteus Professional 8.12</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: كهرباء / تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1556,7 +1629,7 @@ height: 60px !important
     <h2>PSpice 16.5</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: كهرباء / تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1569,7 +1642,7 @@ height: 60px !important
     <h2>PVsyst 7.4.8.38383</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: كهرباء / طاقة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1588,7 +1661,7 @@ height: 60px !important
     <h2>CLO Standalone v7.0.228 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف:</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1601,7 +1674,7 @@ height: 60px !important
     <h2>Gerber 9.0.0.245 (only install)</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف:</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1616,7 +1689,7 @@ height: 60px !important
     <h2>Lectra Modaris V6R1C4</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف:</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1629,7 +1702,7 @@ height: 60px !important
     <h2>Marvelous Designer 9 Enterprise 5.1</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف:</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1642,7 +1715,7 @@ height: 60px !important
     <h2>Marvelous Designer CLO3D 2011.v4.0.3</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف:</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1657,7 +1730,7 @@ height: 60px !important
     <h2>Ned Graphics 2007</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف:</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1672,7 +1745,7 @@ height: 60px !important
     <h2>Optitex 15.3</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف:</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1685,7 +1758,7 @@ height: 60px !important
     <h2>Optitex 21</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف:</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1698,7 +1771,7 @@ height: 60px !important
     <h2>Pad System</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف:</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1711,7 +1784,7 @@ height: 60px !important
     <h2>Wilcom 6</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف:</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1724,7 +1797,7 @@ height: 60px !important
     <h2>Wilcom E2.0T SP3</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف:</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1737,7 +1810,7 @@ height: 60px !important
     <h2>Wilcom E4.2</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف:</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1750,7 +1823,7 @@ height: 60px !important
     <h2>Wilcom ES 9</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف:</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1768,7 +1841,7 @@ height: 60px !important
     <h2>20 20 Kitchen Design v10.5</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1781,7 +1854,7 @@ height: 60px !important
     <h2>3Ds Max 2016</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1794,7 +1867,7 @@ height: 60px !important
     <h2>3Ds Max 2019</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1807,7 +1880,7 @@ height: 60px !important
     <h2>3ds Max 2020</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1820,7 +1893,7 @@ height: 60px !important
     <h2>3DS MAX 2021</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1833,7 +1906,7 @@ height: 60px !important
     <h2>3DS MAX 2022</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1846,7 +1919,7 @@ height: 60px !important
     <h2>3ds Max 2023 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1859,7 +1932,7 @@ height: 60px !important
     <h2>3DS MAX 2024</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1872,7 +1945,7 @@ height: 60px !important
     <h2>3ds Max 2025 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1885,7 +1958,7 @@ height: 60px !important
     <h2>Abaqus AISimulia Suite 2019</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1900,7 +1973,7 @@ height: 60px !important
     <h2>Allplan 2015</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1913,7 +1986,7 @@ height: 60px !important
     <h2>Allplan 2022</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1926,7 +1999,7 @@ height: 60px !important
     <h2>ANSYS 16.1 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1939,7 +2012,7 @@ height: 60px !important
     <h2>ANSYS 2022R1</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1952,7 +2025,7 @@ height: 60px !important
     <h2>ANSYS Products 2019 R1</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1965,7 +2038,7 @@ height: 60px !important
     <h2>ArcGIS 10.3</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1978,7 +2051,7 @@ height: 60px !important
     <h2>ArcGIS 10.5</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -1991,7 +2064,7 @@ height: 60px !important
     <h2>ArcGIS 10.1</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2004,7 +2077,7 @@ height: 60px !important
     <h2>ArcGIS 10.8</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2017,7 +2090,7 @@ height: 60px !important
     <h2>ArcGIS Pro 1.2</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2030,7 +2103,7 @@ height: 60px !important
     <h2>ArcGIS Pro v2.8.3 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2043,7 +2116,7 @@ height: 60px !important
     <h2>ArtCam 2011</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2056,7 +2129,7 @@ height: 60px !important
     <h2>ArtCam 2018</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2069,7 +2142,7 @@ height: 60px !important
     <h2>ArtCam Jewel Smith 9</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2082,7 +2155,7 @@ height: 60px !important
     <h2>Artlantis 2020 v9</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2095,7 +2168,7 @@ height: 60px !important
     <h2>Artlantis Studio 6.5</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2108,7 +2181,7 @@ height: 60px !important
     <h2>AspenONe</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2121,7 +2194,7 @@ height: 60px !important
     <h2>Atlassian JIRA Software 8.21</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2134,7 +2207,7 @@ height: 60px !important
     <h2>Aurora 3D Presentation</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2147,7 +2220,7 @@ height: 60px !important
     <h2>AutoCad Simlation Mechanical</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2160,7 +2233,7 @@ height: 60px !important
     <h2>AutoCad 2014</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2173,7 +2246,7 @@ height: 60px !important
     <h2>AutoCad 2015 ( 32x & 64x )</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2186,7 +2259,7 @@ height: 60px !important
     <h2>AutoCad 2016 ( 32x & 64x )</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2199,7 +2272,7 @@ height: 60px !important
     <h2>AutoCad 2017 ( 32x & 64x )</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2212,7 +2285,7 @@ height: 60px !important
     <h2>AutoCad 2018</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2225,7 +2298,7 @@ height: 60px !important
     <h2>AutoCad 2020</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2238,7 +2311,7 @@ height: 60px !important
     <h2>AutoCAD 2021</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2251,7 +2324,7 @@ height: 60px !important
     <h2>AutoCAD 2022</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2264,7 +2337,7 @@ height: 60px !important
     <h2>AutoCAD 2023</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2277,7 +2350,7 @@ height: 60px !important
     <h2>AutoCAD 2024</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2290,7 +2363,7 @@ height: 60px !important
     <h2>AutoCAD 2025 English 64bit</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2303,7 +2376,7 @@ height: 60px !important
     <h2>AutoCad Architecture 2016 x32</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2316,7 +2389,7 @@ height: 60px !important
     <h2>AutoCAD Architecture 2021</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2329,7 +2402,7 @@ height: 60px !important
     <h2>AutoCAD Architecture 2022 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2342,7 +2415,7 @@ height: 60px !important
     <h2>AutoCAD Architecture 2025</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2355,7 +2428,7 @@ height: 60px !important
     <h2>Autocad Electrical 2014</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2368,7 +2441,7 @@ height: 60px !important
     <h2>AutoCAD Electrical 2021</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2381,7 +2454,7 @@ height: 60px !important
     <h2>AutoCAD Map 2021</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2394,7 +2467,7 @@ height: 60px !important
     <h2>AutoCAD Mechanical 2020</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2407,7 +2480,7 @@ height: 60px !important
     <h2>AutoCAD Mechanical 2021 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2420,7 +2493,7 @@ height: 60px !important
     <h2>AutoCAD MEP 2021</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2433,7 +2506,7 @@ height: 60px !important
     <h2>AutoCAD Raster Design 2021 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2446,7 +2519,7 @@ height: 60px !important
     <h2>AutoCAD Structural Detailing 2015 SP1</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2459,7 +2532,7 @@ height: 60px !important
     <h2>Autodesk Advance Concrete 2017 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2472,7 +2545,7 @@ height: 60px !important
     <h2>Autodesk Advance Steel 2022</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2485,7 +2558,7 @@ height: 60px !important
     <h2>AutoDesk Alias Suite 2013</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2498,7 +2571,7 @@ height: 60px !important
     <h2>Autodesk AutoCAD Electrical 2022 (x64)</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2511,7 +2584,7 @@ height: 60px !important
     <h2>Autodesk Factory Design Utilities 2021 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2524,7 +2597,7 @@ height: 60px !important
     <h2>Autodesk InfraWorks 2020 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2537,7 +2610,7 @@ height: 60px !important
     <h2>Autodesk InfraWorks 2023</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2550,7 +2623,7 @@ height: 60px !important
     <h2>AutoDesk Modlflow Desing 2017</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2565,7 +2638,7 @@ height: 60px !important
     <h2>Blender 3D 2.81 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2579,7 +2652,7 @@ height: 60px !important
     <h2>Bluebeam Revu 20.2.70 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2592,7 +2665,7 @@ height: 60px !important
     <h2>CAMWorks 2018 SP1.0 for SolidWorks 2017-2018 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2605,7 +2678,7 @@ height: 60px !important
     <h2>Canvas.X Pro 20</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2618,7 +2691,7 @@ height: 60px !important
     <h2>Carrier HAP 4.90</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2631,7 +2704,7 @@ height: 60px !important
     <h2>CATIA P3 V5 6R2016 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2644,7 +2717,7 @@ height: 60px !important
     <h2>CATIA P3 V5 6R2019</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2657,7 +2730,7 @@ height: 60px !important
     <h2>CATIA V5 6R2013 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2670,7 +2743,7 @@ height: 60px !important
     <h2>Chief Architect Premier X12 v22.3</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2683,7 +2756,7 @@ height: 60px !important
     <h2>Civil 3D 2011</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2696,7 +2769,7 @@ height: 60px !important
     <h2>Civil 3D 2015</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2709,7 +2782,7 @@ height: 60px !important
     <h2>Civil 3D 2017</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2722,7 +2795,7 @@ height: 60px !important
     <h2>Civil 3D 2019</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2735,7 +2808,7 @@ height: 60px !important
     <h2>Civil 3D 2020</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2748,7 +2821,7 @@ height: 60px !important
     <h2>Civil 3D 2021</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2761,7 +2834,7 @@ height: 60px !important
     <h2>Civil 3D 2023</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2774,7 +2847,7 @@ height: 60px !important
     <h2>Clayoo 2.5 For Rhino 5</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2787,7 +2860,7 @@ height: 60px !important
     <h2>Clayoo 2.5 For Rhino 6</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2800,7 +2873,7 @@ height: 60px !important
     <h2>Clayoo 2.6 For Rhino 6</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2813,7 +2886,7 @@ height: 60px !important
     <h2>Clip Studio Paint EX 1.10 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2826,7 +2899,7 @@ height: 60px !important
     <h2>CLO Standalone 5.2 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2839,7 +2912,7 @@ height: 60px !important
     <h2>Comsol 5.1</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2852,7 +2925,7 @@ height: 60px !important
     <h2>Corona Renderer 1.7 With Library of Materials</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2865,7 +2938,7 @@ height: 60px !important
     <h2>Corona Renderer 11 Hotfix 2 for 3DS MAX 2016-2025</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2878,7 +2951,7 @@ height: 60px !important
     <h2>CSI ETABS 19</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2891,7 +2964,7 @@ height: 60px !important
     <h2>CSI ETABS 20 Build 2760 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2904,7 +2977,7 @@ height: 60px !important
     <h2>CSI SAP2000 Ultimate 20.1 Build x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2917,7 +2990,7 @@ height: 60px !important
     <h2>Delcam DentCAD 2015 R1</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2930,7 +3003,7 @@ height: 60px !important
     <h2>Delcam PowerMill 2016</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2943,7 +3016,7 @@ height: 60px !important
     <h2>EDIUS Pro 7.12</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2956,7 +3029,7 @@ height: 60px !important
     <h2>EDIUS Pro 8</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2969,7 +3042,7 @@ height: 60px !important
     <h2>Enscape 3D 2.8</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2982,7 +3055,7 @@ height: 60px !important
     <h2>Enscape 3D 3.1 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -2995,7 +3068,7 @@ height: 60px !important
     <h2>ERDAS IMAGINE 2015</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3009,7 +3082,7 @@ height: 60px !important
     <h2>Geomagic Design 2019</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3022,7 +3095,7 @@ height: 60px !important
     <h2>Geomagic DesignX 2022</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3035,7 +3108,7 @@ height: 60px !important
     <h2>GRAPHISOFT ARCHICAD 15</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3048,7 +3121,7 @@ height: 60px !important
     <h2>GRAPHISOFT ARCHICAD 19</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3061,7 +3134,7 @@ height: 60px !important
     <h2>GRAPHISOFT ARCHICAD 23</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3074,7 +3147,7 @@ height: 60px !important
     <h2>GRAPHISOFT ARCHICAD 24</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3087,7 +3160,7 @@ height: 60px !important
     <h2>GRAPHISOFT ARCHICAD 25</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3102,7 +3175,7 @@ height: 60px !important
     <h2>Inventor Pro 2019 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3115,7 +3188,7 @@ height: 60px !important
     <h2>Inventor Pro 2020</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3128,7 +3201,7 @@ height: 60px !important
     <h2>Inventor Pro 2025</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3141,7 +3214,7 @@ height: 60px !important
     <h2>Kitchendraw.6.5</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3154,7 +3227,7 @@ height: 60px !important
     <h2>Lumion 10</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3167,7 +3240,7 @@ height: 60px !important
     <h2>Lumion 11</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3180,7 +3253,7 @@ height: 60px !important
     <h2>Lumion Pro 12</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3193,7 +3266,7 @@ height: 60px !important
     <h2>MasterCam 2018</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3206,7 +3279,7 @@ height: 60px !important
     <h2>MasterCam 2019</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3219,7 +3292,7 @@ height: 60px !important
     <h2>MasterCam 2020</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3232,7 +3305,7 @@ height: 60px !important
     <h2>Mastercam X5</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3245,7 +3318,7 @@ height: 60px !important
     <h2>Mastercam X8</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3258,7 +3331,7 @@ height: 60px !important
     <h2>Materialise Magics v24.1</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3271,7 +3344,7 @@ height: 60px !important
     <h2>Maxon Cinema 4D Studio</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3284,7 +3357,7 @@ height: 60px !important
     <h2>Maya 2022</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3297,7 +3370,7 @@ height: 60px !important
     <h2>Mechanical & Mep 2017</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3312,7 +3385,7 @@ height: 60px !important
     <h2>Navisworks Manage 2018</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3325,7 +3398,7 @@ height: 60px !important
     <h2>Navisworks Manage 2020</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3338,7 +3411,7 @@ height: 60px !important
     <h2>Nuke Studio 11.3v5</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3351,7 +3424,7 @@ height: 60px !important
     <h2>OpenRoads Designer CONNECT Edition</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3364,7 +3437,7 @@ height: 60px !important
     <h2>OriginPro 2021</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3377,7 +3450,7 @@ height: 60px !important
     <h2>Perkins SPI2 2018A</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3390,7 +3463,7 @@ height: 60px !important
     <h2>PowerMill 2017</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3403,7 +3476,7 @@ height: 60px !important
     <h2>PowerMill 2020</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3416,7 +3489,7 @@ height: 60px !important
     <h2>PowerMill Ultimate 2023</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3429,7 +3502,7 @@ height: 60px !important
     <h2>Primavera P6 Professional Project Management 21.12</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3442,7 +3515,7 @@ height: 60px !important
     <h2>Primavera P6 R16.1</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3455,7 +3528,7 @@ height: 60px !important
     <h2>PTC Creo 6.0.2</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3468,7 +3541,7 @@ height: 60px !important
     <h2>Realtime Landscaping Architect 2020</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3481,7 +3554,7 @@ height: 60px !important
     <h2>Revit 2013</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3494,7 +3567,7 @@ height: 60px !important
     <h2>Revit 2020</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3507,7 +3580,7 @@ height: 60px !important
     <h2>Revit 2021</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3520,7 +3593,7 @@ height: 60px !important
     <h2>Revit 2022</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3533,7 +3606,7 @@ height: 60px !important
     <h2>Revit 2023</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3546,7 +3619,7 @@ height: 60px !important
     <h2>Revit 2024</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3559,7 +3632,7 @@ height: 60px !important
     <h2>Revit 2025</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3572,7 +3645,7 @@ height: 60px !important
     <h2>Revit Architecture 2015</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3585,7 +3658,7 @@ height: 60px !important
     <h2>Revit Structure 2015</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3598,7 +3671,7 @@ height: 60px !important
     <h2>Revit Structure 2016</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3611,7 +3684,7 @@ height: 60px !important
     <h2>Rhino 5 + VRay + Textures</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3624,7 +3697,7 @@ height: 60px !important
     <h2>Rhinoceros 6.25</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3637,7 +3710,7 @@ height: 60px !important
     <h2>Rhinoceros 7.1</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3650,7 +3723,7 @@ height: 60px !important
     <h2>Rhinoceros 8.2</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3663,7 +3736,7 @@ height: 60px !important
     <h2>RhinoGold Rhino6 6.6</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3677,7 +3750,7 @@ height: 60px !important
     <h2>Robot Structural 2020</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3690,7 +3763,7 @@ height: 60px !important
     <h2>Robot Structural Analysis Professional 2023</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3704,7 +3777,7 @@ height: 60px !important
     <h2>SketchUp Pro 2018</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3717,7 +3790,7 @@ height: 60px !important
     <h2>SketchUp Pro 2019 19.3x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3730,7 +3803,7 @@ height: 60px !important
     <h2>SketchUp Pro 2020 v20.1 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3743,7 +3816,7 @@ height: 60px !important
     <h2>SketchUp Pro 2021 v21 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3756,7 +3829,7 @@ height: 60px !important
     <h2>SketchUp Pro 2022 v22</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3769,7 +3842,7 @@ height: 60px !important
     <h2>SolidWorks 2011 32x</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3782,7 +3855,7 @@ height: 60px !important
     <h2>SolidWorks 2012</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3795,7 +3868,7 @@ height: 60px !important
     <h2>SolidWorks 2013</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3808,7 +3881,7 @@ height: 60px !important
     <h2>SolidWorks 2014</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3821,7 +3894,7 @@ height: 60px !important
     <h2>SolidWorks 2015</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3834,7 +3907,7 @@ height: 60px !important
     <h2>SolidWorks 2019</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3847,7 +3920,7 @@ height: 60px !important
     <h2>SolidWorks 2020</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3860,7 +3933,7 @@ height: 60px !important
     <h2>SolidWorks 2021</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3873,7 +3946,7 @@ height: 60px !important
     <h2>SolidWorks 2022</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3886,7 +3959,7 @@ height: 60px !important
     <h2>Structural Bridge Design 2022</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3899,7 +3972,7 @@ height: 60px !important
     <h2>Surfcam 2014 R2</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3912,7 +3985,7 @@ height: 60px !important
     <h2>SurfCam 2020</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3925,7 +3998,7 @@ height: 60px !important
     <h2>Tekla Structures 2020</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3938,7 +4011,7 @@ height: 60px !important
     <h2>Tekla Structures Design Suite 2021</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3952,7 +4025,7 @@ height: 60px !important
     <h2>Twinmotion 2019</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3965,7 +4038,7 @@ height: 60px !important
     <h2>VectorWorks 2019</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3978,7 +4051,7 @@ height: 60px !important
     <h2>VectorWorks 2020</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -3991,7 +4064,7 @@ height: 60px !important
     <h2>Vero Edgecam 2021 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4005,7 +4078,7 @@ height: 60px !important
     <h2>ZBrush 2022.0.1 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4018,7 +4091,7 @@ height: 60px !important
     <h2>ZWCAD 2021</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: هندسة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4027,7 +4100,7 @@ height: 60px !important
 </div>
 
 </div>
-<h3 class="categ">MATHS</h3>
+<h3 class="categ" data-category="MATHS">MATHS</h3>
 <div class="games-container" data-category="MATHS">
 
 <div class="game" data-price="20000" onclick="showPopup(event, this)">
@@ -4035,7 +4108,7 @@ height: 60px !important
     <h2>IBM SPSS Amos 24.0</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: إحصاء</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4048,7 +4121,7 @@ height: 60px !important
     <h2>Maplesoft Maple 2019.1 x86</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: رياضيات</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4062,7 +4135,7 @@ height: 60px !important
     <h2>MATHCAD v15 x32</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: رياضيات</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4075,7 +4148,7 @@ height: 60px !important
     <h2>Mathtype 7</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: رياضيات</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4088,7 +4161,7 @@ height: 60px !important
     <h2>Minitab 17</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: إحصاء</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4101,7 +4174,7 @@ height: 60px !important
     <h2>Minitab 19.1 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: إحصاء</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4114,7 +4187,7 @@ height: 60px !important
     <h2>Minitab 18.1</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: إحصاء</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4127,7 +4200,7 @@ height: 60px !important
     <h2>PTC Mathcad Prime 5 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: رياضيات</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4140,7 +4213,7 @@ height: 60px !important
     <h2>SPSS 11.5</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: إحصاء</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4153,7 +4226,7 @@ height: 60px !important
     <h2>SPSS 26</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: إحصاء</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4168,21 +4241,23 @@ height: 60px !important
     <h2>SPSS v23</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: إحصاء</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
     <p class="price-after"></p>
     <p class="ss">Size: 1.8 GB</p>
 </div>
-
-<p class="simens">SIMENS</p>
+</DIV>
+<h3 class="categ" data-category="SIEMENS" >SIEMENS</h3>
+<div class="games-container" data-category="SIEMENS">
+    
 <div class="game" data-price="370000" onclick="showPopup(event, this)">
     <img src="https://downloadly.ir/wp-content/uploads/2016/08/Swansoft-CNC-Simulator.jpg" alt="Nanjing Swansoft SSCNC Simulator 7.2.5.2">
     <h2>Nanjing Swansoft SSCNC Simulator 7.2.5.2</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: محاكاة CNC</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4195,7 +4270,7 @@ height: 60px !important
     <h2>Siemens Step 7</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: أتمتة صناعية</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4208,7 +4283,7 @@ height: 60px !important
     <h2>Siemens LOGO Soft Comfort v8.1</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: أتمتة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4221,7 +4296,7 @@ height: 60px !important
     <h2>Siemens NX 12.0.1 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: CAD</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4234,7 +4309,7 @@ height: 60px !important
     <h2>Siemens PLM NX Postprocessors Collection</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: معالجة ما بعد الإنتاج</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4247,7 +4322,7 @@ height: 60px !important
     <h2>Siemens SIMATIC STEP 7 Professional - Safety Advanced & WinCC Professional 16.0 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: أتمتة صناعية</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4260,7 +4335,7 @@ height: 60px !important
     <h2>Siemens Simcenter FloEFD 2021.1.0 v5312 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: المحاكاة الحرارية والديناميكا</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4273,7 +4348,7 @@ height: 60px !important
     <h2>Siemens Solid Edge 2021 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: CAD</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4286,7 +4361,7 @@ height: 60px !important
     <h2>Siemens Solid Edge ST6 x32 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: CAD</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4299,13 +4374,17 @@ height: 60px !important
     <h2>Siemens Star CCM+ 2021.1.1 R8 v16.02.009-R8</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: المحاكاة والميكانيكا الحسابية</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
     <p class="price-after"></p>
     <p class="ss">Size: 7 GB</p>
 </div>
+
+
+
+
 
 </div>
 <h3 class="categ">PROGRAMMING</h3>
@@ -4317,7 +4396,7 @@ height: 60px !important
     <h2>CIMCO Software 8.07</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: معالجة البيانات الصناعية</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4330,7 +4409,7 @@ height: 60px !important
     <h2>Cisco Packet Tracer 7</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: محاكاة الشبكات</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4343,7 +4422,7 @@ height: 60px !important
     <h2>CodeBlocks 17.12</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: بيئة تطوير C++</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4356,7 +4435,7 @@ height: 60px !important
     <h2>DEV C++ 5.11</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: بيئة تطوير C++</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4369,7 +4448,7 @@ height: 60px !important
     <h2>DevExpress Universal 21.2</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: مكتبة واجهات المستخدم</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4384,7 +4463,7 @@ height: 60px !important
     <h2>Eclipse SDK 4.7.1 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: بيئة تطوير جافا</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4398,7 +4477,7 @@ height: 60px !important
     <h2>JetBrains IntelliJ IDEA 2020.1</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: بيئة تطوير جافا</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4411,7 +4490,7 @@ height: 60px !important
     <h2>JetBrains PhpStorm 2020</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: بيئة تطوير PHP</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4424,7 +4503,7 @@ height: 60px !important
     <h2>JetBrains PyCharm Professional 2019.3.3 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: بيئة تطوير بايثون</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4437,7 +4516,7 @@ height: 60px !important
     <h2>JetBrains PyCharm Professional 2021.3</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: بيئة تطوير بايثون</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4450,7 +4529,7 @@ height: 60px !important
     <h2>JetBrains ReSharper Ultimate 2020.3</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تحسين الكود لفيجوال ستوديو</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4463,7 +4542,7 @@ height: 60px !important
     <h2>Komodo Edit 11.1.1</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: محرر نصوص للغات متعددة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4476,7 +4555,7 @@ height: 60px !important
     <h2>Matlab 2015 </h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: بيئة تطوير رياضية</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4491,7 +4570,7 @@ height: 60px !important
     <h2>Matlab 2018</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: بيئة تطوير رياضية</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4504,7 +4583,7 @@ height: 60px !important
     <h2>Matlab 2020</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: بيئة تطوير رياضية</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4517,7 +4596,7 @@ height: 60px !important
     <h2>Matlab 2023</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: بيئة تطوير رياضية</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4531,7 +4610,7 @@ height: 60px !important
     <h2>MATLAB R2016a</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: بيئة تطوير رياضية</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4544,7 +4623,7 @@ height: 60px !important
     <h2>Matlab R2021a x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: بيئة تطوير رياضية</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4557,7 +4636,7 @@ height: 60px !important
     <h2>Microsoft SQL Server 2008</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: قاعدة بيانات</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4570,7 +4649,7 @@ height: 60px !important
     <h2>Microsoft SQL Server 2019 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: قاعدة بيانات</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4585,7 +4664,7 @@ height: 60px !important
     <h2>NetBeans IDE</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: بيئة تطوير متعددة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4598,7 +4677,7 @@ height: 60px !important
     <h2>Python 3.10 amd64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: لغة بايثون</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4611,7 +4690,7 @@ height: 60px !important
     <h2>Python 3.12</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: لغة بايثون</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4624,7 +4703,7 @@ height: 60px !important
     <h2>Python 3.6 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: لغة بايثون</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4637,7 +4716,7 @@ height: 60px !important
     <h2>Unity Pro 2020 2.7f1</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: محرك ألعاب</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4650,7 +4729,7 @@ height: 60px !important
     <h2>Unity3D Pro 2019</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: محرك ألعاب</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4663,7 +4742,7 @@ height: 60px !important
     <h2>Unreal Engine 4.22.3 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: محرك ألعاب</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4676,7 +4755,7 @@ height: 60px !important
     <h2>Unreal Engine 5</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: محرك ألعاب</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4689,7 +4768,7 @@ height: 60px !important
     <h2>Visual Basic 6.0</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: بيئة تطوير Visual Basic</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4702,7 +4781,7 @@ height: 60px !important
     <h2>Visual Studio 2017</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: بيئة تطوير Visual Studio</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4715,7 +4794,7 @@ height: 60px !important
     <h2>Visual Studio 2019</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: بيئة تطوير Visual Studio</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4728,7 +4807,7 @@ height: 60px !important
     <h2>Visual Studio 2022</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: بيئة تطوير Visual Studio</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4742,7 +4821,7 @@ height: 60px !important
     <h2>Visual Studio Code x64 1.61</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: بيئة تطوير Visual Studio Code</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4755,7 +4834,7 @@ height: 60px !important
     <h2>XAMPP 7.4 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: بيئة تطوير XAMPP</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4772,7 +4851,7 @@ height: 60px !important
     <h2>AnyDesk</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: أداة تحكم عن بعد</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4785,7 +4864,7 @@ height: 60px !important
     <h2>BarTender Enterprise 2022.R2.11.3</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: طباعة البطاقات</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4800,7 +4879,7 @@ height: 60px !important
     <h2>Internet Download Manager 6.40 Build 8</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: إدارة التحميلات</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4813,7 +4892,7 @@ height: 60px !important
     <h2>iTunes 12.12 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: إدارة الوسائط لأجهزة iOS</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4826,7 +4905,7 @@ height: 60px !important
     <h2>Kaspersky Total Security 21.2</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: الحماية والأمن</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4839,7 +4918,7 @@ height: 60px !important
     <h2>NiceLabel Suite v5.2</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تصميم الملصقات والباركود</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4852,7 +4931,7 @@ height: 60px !important
     <h2>Nitro Pro 13.70 Enterprise x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: إدارة ملفات PDF</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4865,7 +4944,7 @@ height: 60px !important
     <h2>Office 2021 EN AR</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: برامج المكتب</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4878,7 +4957,7 @@ height: 60px !important
     <h2>OmniPage Ultimate 19.2 Multilingual</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تحويل المستندات</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4891,7 +4970,7 @@ height: 60px !important
     <h2>SHAREit 4.0.6.177</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: مشاركة الملفات</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4904,7 +4983,7 @@ height: 60px !important
     <h2>Turbo Studio 20.10</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: إنشاء التطبيقات المحمولة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4918,7 +4997,7 @@ height: 60px !important
     <h2>VMware Workstation Pro 15.5 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: إنشاء الأنظمة الافتراضية</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4937,7 +5016,7 @@ height: 60px !important
     <h2>Kali Linux 2019.4</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: نظام تشغيل Linux - الأمن السيبراني</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4950,7 +5029,7 @@ height: 60px !important
     <h2>Kali Linux 2020.4</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: نظام تشغيل Linux - الأمن السيبراني</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4963,7 +5042,7 @@ height: 60px !important
     <h2>Kali Linux 2023.1</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: نظام تشغيل Linux - الأمن السيبراني</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4976,7 +5055,7 @@ height: 60px !important
     <h2>Ubuntu 20.04.1 Desktop</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: نظام تشغيل Linux</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -4989,7 +5068,7 @@ height: 60px !important
     <h2>Windows 10 64Bit 1903 (Backup Image)</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: نسخة احتياطية - ويندوز</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5002,7 +5081,7 @@ height: 60px !important
     <h2>Windows 10 22H2 Arabic</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: نظام تشغيل Windows</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5015,7 +5094,7 @@ height: 60px !important
     <h2>Windows 7 UEFI</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: نظام تشغيل Windows</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5030,7 +5109,7 @@ height: 60px !important
     <h2>Windows 10 1909</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: نظام تشغيل Windows</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5043,7 +5122,7 @@ height: 60px !important
     <h2>Windows 10 2004</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: نظام تشغيل Windows</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5056,7 +5135,7 @@ height: 60px !important
     <h2>Windows 10 21H1 English</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: نظام تشغيل Windows</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5069,7 +5148,7 @@ height: 60px !important
     <h2>Windows 10 21H2 English</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: نظام تشغيل Windows</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5082,7 +5161,7 @@ height: 60px !important
     <h2>Windows 10 Lite</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: نظام تشغيل Windows</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5095,7 +5174,7 @@ height: 60px !important
     <h2>Windows 11 22H2 English</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: نظام تشغيل Windows</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5109,7 +5188,7 @@ height: 60px !important
     <h2>Windows 7 SP1 Ultimate</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: نظام تشغيل Windows</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5122,7 +5201,7 @@ height: 60px !important
     <h2>Windows 8.1</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: نظام تشغيل Windows</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5135,7 +5214,7 @@ height: 60px !important
     <h2>Windows Server 2021</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: نظام تشغيل Windows</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5148,7 +5227,7 @@ height: 60px !important
     <h2>Windows XP SP3 AR</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: نظام تشغيل Windows</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5167,7 +5246,7 @@ height: 60px !important
     <h2>ACDSee Photo Studio Ultimate 2020 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تحرير الصور</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5180,7 +5259,7 @@ height: 60px !important
     <h2>Camtasia 2021.0.1 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تحرير الفيديو</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5193,7 +5272,7 @@ height: 60px !important
     <h2>Camtasia Studio 2019</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تحرير الفيديو</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5206,7 +5285,7 @@ height: 60px !important
     <h2>Cubase 10.5</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: إنتاج موسيقي</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5219,7 +5298,7 @@ height: 60px !important
     <h2>CyberLink PowerDirector Ultimate 19</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تحرير الفيديو</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5232,7 +5311,7 @@ height: 60px !important
     <h2>CyberLink PowerDirector Ultimate 20 2204 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تحرير الفيديو</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5245,7 +5324,7 @@ height: 60px !important
     <h2>CyberLink PowerDirector Ultimate 2024 v22.5</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تحرير الفيديو</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5258,7 +5337,7 @@ height: 60px !important
     <h2>CyberLink PowerDVD Ultra 21</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: مشغل وسائط متعددة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5271,7 +5350,7 @@ height: 60px !important
     <h2>CyberLink YouCam Deluxe 9.1</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: كاميرا ويب وتحرير الفيديو</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5284,7 +5363,7 @@ height: 60px !important
     <h2>Davinci Resolve 16.2</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تحرير الفيديو والمونتاج</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5297,7 +5376,7 @@ height: 60px !important
     <h2>Filmora 12 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تحرير الفيديو</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5310,7 +5389,7 @@ height: 60px !important
     <h2>Filmora X v10 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تحرير الفيديو</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5323,7 +5402,7 @@ height: 60px !important
     <h2>FL Studio Producer Edition 20.8 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: إنتاج موسيقي</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5336,7 +5415,7 @@ height: 60px !important
     <h2>FL Studio Producer Edition v21.2</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: إنتاج موسيقي</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5349,7 +5428,7 @@ height: 60px !important
     <h2>FL Studio Producer Edition v24 Build 4285 (x64)</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: إنتاج موسيقي</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5362,7 +5441,7 @@ height: 60px !important
     <h2>Grass Valley EDIUS Pro 8.30</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تحرير الفيديو</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5375,7 +5454,7 @@ height: 60px !important
     <h2>Guitar Pro 5.2</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تأليف موسيقي</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5388,7 +5467,7 @@ height: 60px !important
     <h2>Image-Line FL Studio Producer Edition v24.1.1 Build 4285 (x64)</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: إنتاج موسيقي</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5401,7 +5480,7 @@ height: 60px !important
     <h2>MAGIX VEGAS Pro 18 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تحرير الفيديو</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5414,7 +5493,7 @@ height: 60px !important
     <h2>MAGIX Vegas Pro 19 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تحرير الفيديو</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5427,7 +5506,7 @@ height: 60px !important
     <h2>MakeMusic Finale 27.2</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تأليف موسيقي</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5440,7 +5519,7 @@ height: 60px !important
     <h2>Motion Builder 2016</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: رسوم متحركة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5453,7 +5532,7 @@ height: 60px !important
     <h2>Movavi Screen Recorder 22.5</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تسجيل الشاشة</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5466,7 +5545,7 @@ height: 60px !important
     <h2>Pinnacle Studio Ultimate 24 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: تحرير الفيديو</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5479,7 +5558,7 @@ height: 60px !important
     <h2>Prezi Next 1.30 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: عرض تقديمي</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5492,7 +5571,7 @@ height: 60px !important
     <h2>Steinberg Cubase 11 Pro v11</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: إنتاج موسيقي</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5505,7 +5584,7 @@ height: 60px !important
     <h2>Steinberg Cubase Elements 10 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: إنتاج موسيقي</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5518,7 +5597,7 @@ height: 60px !important
     <h2>Steinberg Cubase v5.1.2</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: إنتاج موسيقي</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5531,7 +5610,7 @@ height: 60px !important
     <h2>Storyline 2.9</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: إنتاج محتوى تفاعلي</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5544,7 +5623,7 @@ height: 60px !important
     <h2>Storyline 3.12</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: إنتاج محتوى تفاعلي</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5557,7 +5636,7 @@ height: 60px !important
     <h2>Virtual Dj PRO 2021 v8.5 x64</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: DJ و تحكم موسيقي</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
@@ -5570,7 +5649,7 @@ height: 60px !important
     <h2>WebcamMax 8</h2>
     <p class="aa" dir="rtl" lang="ar">التصنيف: كاميرا ويب</p>
     <p class="bb" dir="rtl" lang="ar"></p>
-    <p class="cc"></p>
+    <p class="cc" style="text-align: right;"></p>
     <p class="dd"></p>
     <p class="hard">1</p>
     <p class="price-before"></p>
